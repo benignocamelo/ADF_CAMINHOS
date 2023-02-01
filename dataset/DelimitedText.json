@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "5m Sales Records.csv",
-				"folderPath": "sales",
+				"folderPath": "bigquery",
 				"fileSystem": "landing"
 			},
 			"columnDelimiter": ",",
