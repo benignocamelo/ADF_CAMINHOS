@@ -19,12 +19,14 @@
 						"type": "GoogleBigQuerySource"
 					},
 					"sink": {
-						"type": "ParquetSink",
+						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
-							"type": "ParquetWriteSettings"
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -45,12 +47,8 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet",
-						"type": "DatasetReference",
-						"parameters": {
-							"ds_container": "landing",
-							"ds_directory": "bigquery"
-						}
+						"referenceName": "DelimitedText",
+						"type": "DatasetReference"
 					}
 				]
 			}
