@@ -1,0 +1,19 @@
+{
+	"name": "GoogleBigQuery",
+	"properties": {
+		"annotations": [],
+		"type": "GoogleBigQuery",
+		"typeProperties": {
+			"project": "fse-prod",
+			"requestGoogleDriveScope": false,
+			"authenticationType": "ServiceAuthentication",
+			"email": "cnh-ecomex@fse-prod.iam.gserviceaccount.com",
+			"keyFilePath": "C:\\bigquery\\sa\\cnh-ecomex@fse-prod.iam.gserviceaccount.com.json",
+			"useSystemTrustStore": false
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime-BigQuery",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
